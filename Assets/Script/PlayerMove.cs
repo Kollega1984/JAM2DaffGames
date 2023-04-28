@@ -28,7 +28,10 @@ public class PlayerMove : MonoBehaviour
         if (_rigidbody.velocity.x <= 0.01f)
         {
             checkLoseTimer -= Time.deltaTime;
-        } else 
+        } else
+        {
+            checkLoseTimer = 2f;
+        }
         if (checkLoseTimer <= 0 && !loseIsActive)
         {
             StartCoroutine(Lose());
