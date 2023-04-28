@@ -833,9 +833,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2579906367364627585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44bb1a38d9ff36428d26b6c32788be9, type: 3}
+  m_Script: {fileID: 11500000, guid: ee38580932f90ff45942b0545bf9b4c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Coins: 0
+  Level: 0
+  BackgroundColor: {r: 0, g: 0, b: 0, a: 0}
+  IsMusicOn: 0
 --- !u!1 &3387224975950133618
 GameObject:
   m_ObjectHideFlags: 0
@@ -845,7 +849,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3387224975950133628}
-  - component: {fileID: 3387224975950133629}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -868,18 +871,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3387224975950133629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3387224975950133618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fbe48f99f77b4d4585edcb366b4d5c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3400109658932529102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,7 +1470,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   hasImage: 1
   isText: 0
 --- !u!1 &3657329691670424082
@@ -1532,7 +1523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   hasImage: 1
   isText: 0
 --- !u!1 &3657381633433023620
@@ -1618,7 +1609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   hasImage: 1
   isText: 0
 --- !u!1 &3657610087752451318
@@ -1686,7 +1677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   hasImage: 0
   isText: 1
 --- !u!1 &3657843747836696946
@@ -1815,7 +1806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4870c7d0bdddd644a64ab8bc98f83ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   hasImage: 1
   isText: 0
 --- !u!114 &3658938564498772449
@@ -1870,7 +1861,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3657223196967533564}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2fbe48f99f77b4d4585edcb366b4d5c3, type: 3}
+  m_Script: {fileID: 11500000, guid: ac5c6357edab85945b8521d457d4ebf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &3658938564905839512
@@ -2311,7 +2302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6698113, b: 0.0074288733, a: 1}
+  m_Color: {r: 0.37169808, g: 1, b: 0.55121297, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2353,7 +2344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6698113, b: 0.0074288733, a: 1}
+  m_Color: {r: 0.37169808, g: 1, b: 0.55121297, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2490,7 +2481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theme: 0
-  themeController: {fileID: 0}
+  themeController: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067, type: 2}
   mainCanvas: {fileID: 3657223196967533564}
   PanelControls: {fileID: 0}
   PanelVideo: {fileID: 0}
@@ -2531,7 +2522,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.6698113, b: 0.0074288733, a: 1}
+  m_Color: {r: 0.37169808, g: 1, b: 0.55121297, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3337,12 +3328,12 @@ PrefabInstance:
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
@@ -3353,7 +3344,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 3698169693506661440}
+      objectReference: {fileID: 3658938564631225864}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -3367,12 +3358,17 @@ PrefabInstance:
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadScene
+      value: PlayGameTwo
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: PlayGameTwo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MainMenu, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
@@ -3382,7 +3378,7 @@ PrefabInstance:
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Second_Scene
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
@@ -4001,7 +3997,8 @@ PrefabInstance:
         type: 3}
       propertyPath: themeController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067,
+        type: 2}
     - target: {fileID: 5429341922959870820, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_Enabled
@@ -4011,7 +4008,8 @@ PrefabInstance:
         type: 3}
       propertyPath: themeController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067,
+        type: 2}
     - target: {fileID: 5429341922959870843, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_Name
@@ -4230,7 +4228,8 @@ PrefabInstance:
         type: 3}
       propertyPath: themeController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067,
+        type: 2}
     - target: {fileID: 5429341922959870820, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_Enabled
@@ -4240,7 +4239,8 @@ PrefabInstance:
         type: 3}
       propertyPath: themeController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: e00c7d2bc58a2424b8dc09ecdafdb067,
+        type: 2}
     - target: {fileID: 5429341922959870843, guid: 817319833dd713d45af5c2121e9649c7,
         type: 3}
       propertyPath: m_Name
